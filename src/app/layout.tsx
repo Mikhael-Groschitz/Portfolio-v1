@@ -4,6 +4,8 @@ import "./globals.css";
 import SiteProtection from "@/components/SiteProtection/SiteProtection";
 import Konami from "@/components/EasterEgg/Konami";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-fira-code" });
@@ -63,6 +65,8 @@ export default function RootLayout({
             <Konami />
             {children}
         </LanguageProvider>
+        <Analytics />
+        <SpeedInsights />
         </body>
         </html>
     );
