@@ -30,7 +30,7 @@ export const dictionaries = {
 
             desc3_start: "Especializando-me em ",
             desc3_highlight: "Arquitetura e Ciência de dados",
-
+            desc3_end: ".",
 
             subtitle: "// ALÉM DO TERMINAL",
             trait1_title: "BUILDER:",
@@ -192,6 +192,7 @@ export const dictionaries = {
 
             desc3_start: "Specializing in ",
             desc3_highlight: "Data Architecture and Data Science",
+            desc3_end: ".",
 
             subtitle: "// BEYOND THE TERMINAL",
             trait1_title: "BUILDER:",
