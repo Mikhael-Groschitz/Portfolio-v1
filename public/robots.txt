@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-# Bloquear pastas de sistema ou privadas (se você tiver)
+# Bloquear pastas de sistema ou privadas
 Disallow: /_next/
 Disallow: /static/
 
