@@ -1,0 +1,52 @@
+"use client";
+
+import React, { useState } from 'react';
+import { FaPaperPlane } from 'react-icons/fa';
+import { useLanguage } from '@/contexts/LanguageContext';
+
+const ContactSection = () => {
+    const { t } = useLanguage();
+    const [mailLink, setMailLink] = useState("#");
+
+    const handleInteraction = () => {
+        const u = "mgroschitz";
+        const d = "gmail.com";
+
+        if (mailLink !== `mailto:${u}@${d}`) {
+            setMailLink(`mailto:${u}@${d}`);
+        }
+    };
+
+    return (
+        <div className="w-full flex flex-col items-center justify-center text-center gap-5">
+            <div className="container mx-auto px-6 max-w-3xl flex flex-col items-center gap-6">
+
+                <div className="contact-icon-plane">
+                    <FaPaperPlane className="transform -translate-x-0.5 translate-y-0.5" />
+                </div>
+
+                <h2 className="contact-heading">
+                    <span className="contact-prompt">&gt;</span> {t.contact.title}
+                    <span className="pill-cursor is-visible">_</span>
+                </h2>
+
+                <p className="contact-description">
+                    {t.contact.description}
+                </p>
+
+                <a
+                    href={mailLink}
+                    onMouseEnter={handleInteraction}
+                    onFocus={handleInteraction}
+                    onClick={handleInteraction}
+                    className="btn-contact-primary"
+                >
+                    {t.contact.button}
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    );
+};
+
+export default ContactSection;

@@ -1,0 +1,10 @@
+# Para todos os robôs (Google, Bing, etc)
+User-agent: *
+Allow: /
+
+# Bloquear pastas de sistema ou privadas (se você tiver)
+Disallow: /_next/
+Disallow: /static/
+
+# Informe o caminho do seu Sitemap (troque pelo seu domínio final)
+Sitemap: https://seu-dominio.com/sitemap.xml

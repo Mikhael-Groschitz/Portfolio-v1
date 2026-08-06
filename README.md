@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Mikhael Groschitz | Portfolio
 
-## Getting Started
+Bem-vindo ao repositório do meu portfólio profissional. Este projeto foi desenvolvido para servir como uma vitrine técnica da minha transição de carreira e especialização em **Arquitetura de Software, Data Science e Cybersecurity** pela **PUCPR**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto utiliza tecnologias robustas para garantir performance e escalabilidade:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Framework** | Next.js 16 (App Router), TypeScript |
+| **Estilização** | Tailwind CSS, Lucide Icons |
+| **Animações** | GSAP, Framer Motion |
+| **Segurança** | JIT Email Obfuscation, Site Protection Middleware |
+| **UX/UI** | Glassmorphism, Responsive Design (Mobile First) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Funcionalidades em Destaque
 
-To learn more about Next.js, take a look at the following resources:
+* **Internacionalização (i18n)**: Sistema dinâmico de troca de idioma (PT-BR / EN-US) gerenciado via **React Context API**, com persistência no `localStorage` e retorno automático ao topo da página.
+* **Camada de Segurança**:
+    * **Site Protection**: Bloqueio de teclas de inspeção (F12, Ctrl+Shift+I) e menu de contexto para proteger a integridade visual.
+    * **JIT Email Obfuscation**: O link de contato é montado dinamicamente via JavaScript apenas sob interação humana, prevenindo a coleta por bots de spam.
+* **🎮 Easter Eggs**:
+    * **Konami Code**: Homenagem à cultura geek que desbloqueia uma surpresa interativa.
+    * **Console Fanfare**: Mensagens personalizadas no DevTools para desenvolvedores curiosos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Arquitetura e Engenharia
 
-## Deploy on Vercel
+* **Componentização**: Código modular seguindo padrões modernos de desenvolvimento.
+* **SEO Avançado**: Configuração de `robots.txt`, `sitemap.ts` dinâmico e Meta Tags (Open Graph) para visibilidade internacional.
+* **Otimização Mobile**: Interface totalmente adaptada para dispositivos de baixa resolução, como o iPhone SE.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+    git clone https://github.com
+   
+2. **Instale as dependências**:
+
+    ```bash
+    npm install
+3. **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
+   
+## ✉️ Contato
+**LinkedIn**: [https://www.linkedin.com/in/mikhael-groschitz/]
+
+**Email**: mgroschitz@gmail.com
