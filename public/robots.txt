@@ -6,5 +6,5 @@ Allow: /
 Disallow: /_next/
 Disallow: /static/
 
-# Informe o caminho do seu Sitemap (troque pelo seu domínio final)
-Sitemap: https://seu-dominio.com/sitemap.xml
+# Sitemap
+Sitemap: https://mgroschitz.vercel.app/sitemap.xml

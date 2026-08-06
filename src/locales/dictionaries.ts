@@ -20,21 +20,21 @@ export const dictionaries = {
         // --- SEÇÃO ABOUT ---
         about: {
             title: "Sobre Mim",
-            desc1_start: "Sou uma pessoa movida pela curiosidade de entender como as coisas funcionam ",
-            desc1_highlight: '"Eu ainda não sei fazer mas eu fuço até descobrir"',
+            desc1_start: "Sou um profissional movido pelo desafio de transformar ambientes complexos de dados em inteligência de negócios.",
+            desc1_highlight: 'Especialista em otimização de performance e construção de pipelines robustos',
             desc1_end: ".",
 
-            desc2_start: "Hoje, atuo como ",
-            desc2_highlight: "Analista de Dados Júnior",
-            desc2_end: ", transformando dados brutos em inteligência.",
+            desc2_start: "Atuo na intersecção ",
+            desc2_highlight: "entre a engenharia de software e a ciência de dados",
+            desc2_end: "para garantir que a informação chegue com qualidade, segurança e velocidade.",
 
             desc3_start: "Especializando-me em ",
-            desc3_highlight: "Arquitetura, Ciência de dados e Cybersecurity",
-            desc3_end: ". 🏙️",
+            desc3_highlight: "Arquitetura e Ciência de dados",
+
 
             subtitle: "// ALÉM DO TERMINAL",
-            trait1_title: "PAI:",
-            trait1_desc: "Aprendendo com minha filha de 3 anos.",
+            trait1_title: "BUILDER:",
+            trait1_desc: " Unindo hobbies e código, desenvolvendo aplicações e projetos paralelos para a comunidade de jogos.",
             trait2_title: "HOMELABBER:",
             trait2_desc: "Construindo servidores caseiros e redes internas.",
             trait3_title: "HOBBYIST:",
@@ -54,9 +54,9 @@ export const dictionaries = {
                 {
                     id: 1,
                     period: "03/2026 ~ Atualmente",
-                    role: "Engenheiro de Software | Analista Back End",
+                    role: "Engenheiro de dados | Analista Back End",
                     company: "Credware Tecnologia (Cliente: Facta Financeira)",
-                    description: "Foco em otimização de performance em SQL Server, além de desenvolvimento e automação utilizando Python, PHP e Airflow para migração de dados.",
+                    description: "Foco na arquitetura e otimização de alta performance em bancos de dados relacionais (SQL Server) para o setor financeiro. Responsável pelo desenvolvimento e orquestração de pipelines de ETL/ELT com Apache Airflow, além da arquitetura, revisão de código e melhoria contínua de robôs e automações em Python, garantindo escalabilidade, integridade sistêmica e excelência operacional.",
                 },
                 {
                     id: 2,
@@ -84,8 +84,8 @@ export const dictionaries = {
             items: [
                 {
                     id: 1,
-                    title: 'Dashboard de Inteligência Comercial',
-                    category: 'Análise de Dados', // Traduzido
+                    title: 'Dashboard de insights de negócio',
+                    category: 'Análise de Dados',
                     image: '/project1.jpg',
                     description: 'Dashboard interativo para análise de vendas. ETL com Python e visualização no Power BI.',
                     techs: ['Python', 'Pandas', 'Power BI', 'SQL'],
@@ -95,30 +95,33 @@ export const dictionaries = {
                 {
                     id: 2,
                     title: 'Homelab Monitor & Controlador',
-                    category: 'DevOps & Sistemas', // Traduzido
+                    category: 'DevOps',
+                    category2: 'Hobby',
                     image: '/project2.png',
                     description: 'Aplicação full-stack para monitoramento de recursos do servidor caseiro e containers Docker.',
-                    techs: ['Java', 'Spring Boot', 'React', 'Docker'],
+                    techs: ['Python', 'React', 'Docker'],
                     repoLink: 'https://github.com/seu-usuario/repo',
                     demoLink: 'https://demo-link.com'
                 },
                 {
                     id: 3,
-                    title: 'MTG Forja de Tokens',
+                    title: 'MTG TokenForge',
                     category: 'Mobile / Web App',
+                    category2: 'Fullstack',
+                    category3: 'Hobby',
                     image: '/project3.png',
                     description: 'Crie e administre seus tokens customizados. Focado em ajudar jogadores de MTG a ter um controle melhor sobre o "Estado da mesa" ',
-                    techs: ['React Native', 'JS', 'Java', 'Spring boot', 'CSS'],
+                    techs: ['React','Java', 'Spring boot', 'PostgreSQL'],
                     repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
                     demoLink: 'https://demo-link.com'
                 },
                 {
                     id: 4,
                     title: 'Corporate ERP Integration',
-                    category: 'Arquitetura Backend', // Traduzido
+                    category: 'Arquitetura Backend',
                     image: '/Project4.png',
                     description: 'API RESTful robusta para integrar sistemas legados com novas plataformas de e-commerce.',
-                    techs: ['Java', 'Spring', 'PostgreSQL', 'Swagger'],
+                    techs: ['Java', 'Spring', 'PostgreSQL'],
                     repoLink: 'https://github.com/seu-usuario/repo',
                     demoLink: 'https://demo-link.com'
                 }
@@ -128,7 +131,7 @@ export const dictionaries = {
         // --- SEÇÃO CONTATO ---
         contact: {
             title: "Bora Conversar?",
-            description: "Tem uma ideia de projeto, uma vaga de engenheiro de dados ou apenas quer conversar sobre tecnologia?",
+            description: "Tem um desafio de dados complexo, uma vaga para Engenharia/Análise de Dados Pleno, ou quer conversar sobre arquitetura e performance?",
             button: "Diga Olá"
         },
 
@@ -147,15 +150,15 @@ export const dictionaries = {
         // --- MENSAGENS DO CONSOLE ---
         console: {
             fanfare: "🎵 Victory Fanfare:",
-            secret: "Você encontrou o console secreto!",
+            secret: "Você encontrou um dos easter egg",
             contact: "Curtiu o código? Vamos conversar: mgroschitz@gmail.com"
         },
 
         // --- SEO ---
         seo: {
             title: "Mikhael Groschitz | Analista de Dados & Engenheiro de dados",
-            description: "Portfolio de Mikhael Groschitz, Analista de Dados Júnior e estudante de Pós-graduação em Arquitetura de Software na PUCPR. Especialista em Data Science, Cybersecurity e Homelabs.",
-            keywords: "Data Analyst, Software Architecture, PUCPR, Portfolio, React, Next.js, Cybersecurity, Porto Alegre"
+            description: "Portfolio de Mikhael Groschitz, Analista de Dados e estudante de Pós-graduação em Arquitetura de Software na PUCPR. Especialista em Data Science, Cybersecurity e Homelabs.",
+            keywords: "Data Analyst, Software Architecture, PUCPR, Portfolio, Python, SQL, Cybersecurity, Porto Alegre"
         }
     },
     en: {
@@ -179,21 +182,20 @@ export const dictionaries = {
         // --- SEÇÃO ABOUT (EN) ---
         about: {
             title: "About Me",
-            desc1_start: "I'm a data engineer driven by the curiosity to understand how things work ",
-            desc1_highlight: '"under the hood"',
+            desc1_start: "I am a professional driven by the challenge of transforming complex data environments into business intelligence.",
+            desc1_highlight: "Specialist in performance optimization and building robust pipelines",
             desc1_end: ".",
 
-            desc2_start: "Today, I work as a ",
-            desc2_highlight: "Junior Data Analyst",
-            desc2_end: ", transforming raw data into intelligence.",
+            desc2_start: "I operate at the intersection ",
+            desc2_highlight: "of software engineering and data science",
+            desc2_end: " to ensure that information is delivered with quality, security, and speed.",
 
             desc3_start: "Specializing in ",
-            desc3_highlight: "Software Architecture, Data Science & Cybersecurity",
-            desc3_end: ". 🏙️",
+            desc3_highlight: "Data Architecture and Data Science",
 
             subtitle: "// BEYOND THE TERMINAL",
-            trait1_title: "FATHER:",
-            trait1_desc: "Learning with my 3-year-old daughter.",
+            trait1_title: "BUILDER:",
+            trait1_desc: "Bridging hobbies and code through side projects and apps for the gaming community.",
             trait2_title: "HOMELABBER:",
             trait2_desc: "Building and breaking servers.",
             trait3_title: "HOBBYIST:",
@@ -212,9 +214,9 @@ export const dictionaries = {
                 {
                     id: 1,
                     period: "03/2026 ~ Present",
-                    role: "Software Engineer | Back End Analyst",
+                    role: "Data Engineer | Back End Analyst",
                     company: "Credware Technology (Client: Facta Financeira)",
-                    description: "Focus on SQL Server performance optimization, alongside development and automation using Python, PHP, and Airflow for data migration.",
+                    description: "Focused on the architecture and high-performance optimization of relational databases (SQL Server) for the financial sector. Responsible for developing and orchestrating ETL/ELT pipelines with Apache Airflow, as well as the architecture, code review, and continuous improvement of bots and automations in Python, ensuring scalability, system integrity, and operational excellence.",
                 },
                 {
                     id: 2,
@@ -254,6 +256,7 @@ export const dictionaries = {
                     id: 2,
                     title: 'Homelab Monitor & Controller',
                     category: 'DevOps & Systems',
+                    category2: 'Hobby',
                     image: '/project2.png',
                     description: 'Full-stack application for monitoring home server resources and Docker containers.',
                     techs: ['Java', 'Spring Boot', 'React', 'Docker'],
@@ -264,6 +267,8 @@ export const dictionaries = {
                     id: 3,
                     title: 'MTG Token Forge',
                     category: 'Mobile / Web App',
+                    category2: ' Full Stack',
+                    category3: 'Hobby',
                     image: '/project3.png',
                     description: 'Create and manage our own custom tokens. Focused on helping MTG players to have a better control of their "board state" ',
                     techs: ['React Native', 'JS', 'Java', 'Spring boot', 'CSS'],
@@ -285,8 +290,8 @@ export const dictionaries = {
 
         // --- SEÇÃO CONTATO (EN) ---
         contact: {
-            title: "Let's Talk?",
-            description: "Have a project idea, a Dev position or just want to chat about technology?",
+            title: "Let's Chat?",
+            description: "Have a complex data challenge, a mid-level Data Engineer/Analyst opening, or want to talk about architecture and performance?",
             button: "Say Hello"
         },
 
@@ -305,7 +310,7 @@ export const dictionaries = {
         // --- MENSAGEM DO CONSOLE (EN)
         console: {
             fanfare: "🎵 Victory Fanfare:",
-            secret: "You found the secret console!",
+            secret: "You found one of the easter eggs!",
             contact: "Like the code? Let's talk: mgroschitz@gmail.com"
         },
 
@@ -313,7 +318,7 @@ export const dictionaries = {
         seo: {
             title: "Mikhael Groschitz | Data Analyst & Software Architect",
             description: "Portfolio of Mikhael Groschitz, Junior Data Analyst and Post-graduate student in Software Architecture at PUCPR. Specialist in Data Science, Cybersecurity, and Homelabs.",
-            keywords: "Data Analyst, Software Architecture, PUCPR, Portfolio, React, Next.js, Cybersecurity, Brazil"
+            keywords: "Data Analyst, Software Architecture, PUCPR, Portfolio, Python, SQL, Cybersecurity, Brazil"
         }
     }
 };

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "pt_BR",
-        url: "https://seu-portfolio.com",
+        url: "https://mgroschitz.vercel.app",
         title: "Mikhael Groschitz | Portfolio",
         description: "Explorando a interseção entre análise de dados e arquitetura de sistemas.",
         siteName: "Mikhael Groschitz Portfolio",
@@ -44,6 +44,9 @@ export const metadata: Metadata = {
                 alt: "Mikhael Groschitz | Portfolio Preview",
             },
         ],
+    },
+    icons: {
+        icon: '/icon.png',
     },
 };
 

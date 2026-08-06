@@ -10,10 +10,8 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  // Estende as configurações padrão do Next.js e TypeScript
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
-  // Seus ignores globais (opcional, pois o Next já ignora .next e node_modules)
   {
     ignores: [".next/**", "node_modules/**"]
   }

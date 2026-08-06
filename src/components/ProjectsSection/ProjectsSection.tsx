@@ -25,58 +25,79 @@ export default function ProjectsSection() {
             </div>
 
             <div className="projects-center">
-                {t.projects.items.map((project) => (
-                    <article
-                        key={project.id}
-                        className="project"
-                        onClick={() => setSelectedProjectId(project.id)}
-                    >
-                        <div className="project-chrome" aria-hidden="true">
-                            <span className="project-dot" />
-                            <span className="project-dot" />
-                            <span className="project-dot" />
-                        </div>
+                {t.projects.items.map((project) => {
+                    const categories = [project.category, project.category2, project.category3].filter(
+                        (cat): cat is string => Boolean(cat)
+                    );
 
-                        <div className="project-thumb">
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="project-img"
-                            />
-                        </div>
+                    return (
+                        <article
+                            key={project.id}
+                            className="project"
+                            onClick={() => setSelectedProjectId(project.id)}
+                        >
+                            <div className="project-chrome" aria-hidden="true">
+                                <span className="project-dot" />
+                                <span className="project-dot" />
+                                <span className="project-dot" />
+                            </div>
 
-                        <div className="project-body">
-                            <h4 className="project-title">{project.title}</h4>
-                            <span className="project-tag">{project.category}</span>
+                            <div className="project-thumb">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="project-img"
+                                />
+                            </div>
 
-                            <div className="link-container">
-                                <a
-                                    href={project.repoLink}
-                                    className="project-icon"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onClick={(e) => e.stopPropagation()}
-                                    title="GitHub"
-                                >
-                                    <FaGithub />
-                                </a>
+                            <div className="project-body">
+                                <h4 className="project-title">{project.title}</h4>
 
-                                {project.demoLink && (
+                                {categories.length > 0 && (
+                                    <div className="project-tags">
+                                        {categories.map((cat) => (
+                                            <span key={cat} className="project-tag">{cat}</span>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {project.techs && project.techs.length > 0 && (
+                                    <div className="project-tags">
+                                        {project.techs.map((tech) => (
+                                            <span key={tech} className="project-tech-tag">{tech}</span>
+                                        ))}
+                                    </div>
+                                )}
+
+                                <div className="link-container">
                                     <a
-                                        href={project.demoLink}
+                                        href={project.repoLink}
                                         className="project-icon"
                                         target="_blank"
                                         rel="noreferrer"
                                         onClick={(e) => e.stopPropagation()}
-                                        title="Live Demo"
+                                        title="GitHub"
                                     >
-                                        <FaExternalLinkAlt />
+                                        <FaGithub />
                                     </a>
-                                )}
+
+                                    {project.demoLink && (
+                                        <a
+                                            href={project.demoLink}
+                                            className="project-icon"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                            title="Live Demo"
+                                        >
+                                            <FaExternalLinkAlt />
+                                        </a>
+                                    )}
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                ))}
+                        </article>
+                    );
+                })}
             </div>
 
             <AnimatePresence>
