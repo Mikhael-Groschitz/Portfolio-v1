@@ -113,7 +113,7 @@ export const dictionaries = {
                     description: 'Crie e administre seus tokens customizados. Focado em ajudar jogadores de MTG a ter um controle melhor sobre o "Estado da mesa" ',
                     techs: ['React','Java', 'Spring boot', 'PostgreSQL'],
                     repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
-                    demoLink: 'https://demo-link.com'
+                    demoLink: 'https://mtg-token-counter-web.vercel.app'
                 },
                 {
                     id: 4,
@@ -274,7 +274,7 @@ export const dictionaries = {
                     description: 'Create and manage our own custom tokens. Focused on helping MTG players to have a better control of their "board state" ',
                     techs: ['React Native', 'JS', 'Java', 'Spring boot', 'CSS'],
                     repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
-                    demoLink: 'https://demo-link.com'
+                    demoLink: 'https://mtg-token-counter-web.vercel.app'
                 },
                 {
                     id: 4,
