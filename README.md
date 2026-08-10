@@ -43,7 +43,7 @@ O projeto utiliza tecnologias robustas para garantir performance e escalabilidad
 
 1. **Clone o repositório**:
    ```bash
-    git clone https://github.com
+    git clone https://github.com/Mikhael-Groschitz/Portifolio.git
    
 2. **Instale as dependências**:
 
@@ -54,6 +54,6 @@ O projeto utiliza tecnologias robustas para garantir performance e escalabilidad
     npm run dev
    
 ## ✉️ Contato
-**LinkedIn**: [https://www.linkedin.com/in/mikhael-groschitz/]
+**LinkedIn**: https://www.linkedin.com/in/mikhael-groschitz/
 
 **Email**: mgroschitz@gmail.com
