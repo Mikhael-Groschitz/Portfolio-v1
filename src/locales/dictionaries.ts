@@ -132,7 +132,9 @@ export const dictionaries = {
         contact: {
             title: "Bora Conversar?",
             description: "Tem um desafio de dados complexo, uma vaga para Engenharia/Análise de Dados Pleno, ou quer conversar sobre arquitetura e performance?",
-            button: "Diga Olá"
+            cta: "Diga Olá",
+            emailAriaLabel: "Enviar email",
+            whatsappAriaLabel: "WhatsApp"
         },
 
         // --- SEÇÃO FOOTER ---
@@ -293,7 +295,9 @@ export const dictionaries = {
         contact: {
             title: "Let's Chat?",
             description: "Have a complex data challenge, a mid-level Data Engineer/Analyst opening, or want to talk about architecture and performance?",
-            button: "Say Hello"
+            cta: "Say Hello",
+            emailAriaLabel: "Send email",
+            whatsappAriaLabel: "WhatsApp"
         },
 
         // --- SEÇÃO FOOTER (EN) ---

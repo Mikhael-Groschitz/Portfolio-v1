@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaPaperPlane, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const ContactSection = () => {
@@ -34,16 +34,30 @@ const ContactSection = () => {
                     {t.contact.description}
                 </p>
 
-                <a
-                    href={mailLink}
-                    onMouseEnter={handleInteraction}
-                    onFocus={handleInteraction}
-                    onClick={handleInteraction}
-                    className="btn-contact-primary"
-                >
-                    {t.contact.button}
-                    <span>→</span>
-                </a>
+                <p className="contact-invite">{t.contact.cta}</p>
+
+                <div className="flex items-center justify-center gap-3 flex-wrap">
+                    <a
+                        href={mailLink}
+                        onMouseEnter={handleInteraction}
+                        onFocus={handleInteraction}
+                        onClick={handleInteraction}
+                        className="btn-contact-icon"
+                        aria-label={t.contact.emailAriaLabel}
+                    >
+                        <FaEnvelope />
+                    </a>
+
+                    <a
+                        href="https://wa.me/5551992000475"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn-contact-icon"
+                        aria-label={t.contact.whatsappAriaLabel}
+                    >
+                        <FaWhatsapp />
+                    </a>
+                </div>
             </div>
         </div>
     );
