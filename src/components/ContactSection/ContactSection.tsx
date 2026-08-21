@@ -49,7 +49,7 @@ const ContactSection = () => {
                     </a>
 
                     <a
-                        href="https://wa.me/5551992000475"
+                        href="https://wa.link/pxm6md"
                         target="_blank"
                         rel="noreferrer"
                         className="btn-contact-icon"
