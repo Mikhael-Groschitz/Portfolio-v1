@@ -48,6 +48,15 @@ export default function ProjectsSection() {
                                     alt={project.title}
                                     className="project-img"
                                 />
+                                <a
+                                    href={project.repoLink}
+                                    className="project-thumb-overlay"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    <FaGithub /> {t.projects.viewRepo}
+                                </a>
                             </div>
 
                             <div className="project-body">
@@ -102,12 +111,12 @@ export default function ProjectsSection() {
 
             <AnimatePresence>
                 {selectedProject && (
-                    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+                    <div className="modal-cover fixed z-[60] flex items-center justify-center p-4">
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+                            className="modal-cover absolute bg-black/70 backdrop-blur-sm"
                             onClick={() => setSelectedProjectId(null)}
                         />
                         <motion.div

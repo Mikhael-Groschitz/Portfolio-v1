@@ -80,28 +80,28 @@ export const dictionaries = {
             title: "Projetos em Destaque",
             subtitle: "Confira meus projetos mais recentes",
             techStack: "Tech Stack:",
+            viewRepo: "Ver no GitHub",
 
             items: [
                 {
                     id: 1,
-                    title: 'Dashboard de insights de negócio',
-                    category: 'Análise de Dados',
-                    image: '/project1.jpg',
-                    description: 'Dashboard interativo para análise de vendas. ETL com Python e visualização no Power BI.',
-                    techs: ['Python', 'Pandas', 'Power BI', 'SQL'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink: 'https://demo-link.com'
+                    title: 'Pipeline ELT de Preços de Combustíveis (ANP)',
+                    category: 'Engenharia de Dados',
+                    category2: 'Cloud/Azure',
+                    image: '/project-anp-fuel.svg',
+                    description: 'Pipeline ELT na Azure que processa mais de 20 anos de preços de combustíveis da ANP (~32 milhões de linhas). Ingestão via web scraping para o Data Lake, padronização para Parquet, modelagem dimensional com SCD2 via Azure Data Factory e T-SQL, e dashboard final em Power BI.',
+                    techs: ['Python', 'Azure Data Factory', 'Azure SQL', 'Power BI'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/anp-fuel-prices-elt-azure',
                 },
                 {
                     id: 2,
-                    title: 'Homelab Monitor & Controlador',
-                    category: 'DevOps',
-                    category2: 'Hobby',
-                    image: '/project2.png',
-                    description: 'Aplicação full-stack para monitoramento de recursos do servidor caseiro e containers Docker.',
-                    techs: ['Python', 'React', 'Docker'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink: 'https://demo-link.com'
+                    title: 'CDC de SQL Server para Data Warehouse',
+                    category: 'Engenharia de Dados',
+                    category2: 'Data Warehouse',
+                    image: '/project-cdc-dw.svg',
+                    description: 'Pipeline que captura mudanças direto do SQL Server via Change Data Capture nativo (rastreamento por LSN) e carrega incrementalmente um data warehouse dimensional com SCD2, sem orquestradores externos. Ambiente Dockerizado, com testes automatizados em pytest.',
+                    techs: ['SQL Server', 'T-SQL', 'Python', 'Docker'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/sqlserver-cdc-to-dw',
                 },
                 {
                     id: 3,
@@ -117,13 +117,13 @@ export const dictionaries = {
                 },
                 {
                     id: 4,
-                    title: 'Corporate ERP Integration',
-                    category: 'Arquitetura Backend',
-                    image: '/Project4.png',
-                    description: 'API RESTful robusta para integrar sistemas legados com novas plataformas de e-commerce.',
-                    techs: ['Java', 'Spring', 'PostgreSQL'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink: 'https://demo-link.com'
+                    title: 'Data Lakehouse de CNPJs',
+                    category: 'Engenharia de Dados',
+                    category2: 'Big Data',
+                    image: '/project-cnpj-lakehouse.svg',
+                    description: 'Lakehouse local em camadas (bronze, silver, gold) para os dados públicos de CNPJ da Receita Federal, com orquestração via Airflow, processamento distribuído em PySpark e armazenamento em Delta Lake sobre MinIO.',
+                    techs: ['PySpark', 'Airflow', 'Delta Lake', 'Docker'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/cnpj-lakehouse-spark-airflow',
                 }
             ]
         },
@@ -243,28 +243,28 @@ export const dictionaries = {
             title: "Featured Projects",
             subtitle: "Check out my latest projects",
             techStack: "Tech Stack:",
+            viewRepo: "View on GitHub",
 
             items: [
                 {
                     id: 1,
-                    title: 'Sales Intelligence Dashboard',
-                    category: 'Data Analysis',
-                    image: '/project1.jpg',
-                    description: 'Interactive dashboard for sales analysis. ETL with Python and visualization in Power BI.',
-                    techs: ['Python', 'Pandas', 'Power BI', 'SQL'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink: 'https://demo-link.com'
+                    title: 'ANP Fuel Prices ELT Pipeline',
+                    category: 'Data Engineering',
+                    category2: 'Cloud/Azure',
+                    image: '/project-anp-fuel.svg',
+                    description: 'An Azure ELT pipeline processing 20+ years of Brazilian fuel price data (~32 million rows). Web-scraped ingestion into a Data Lake, Parquet standardization, dimensional modeling with SCD2 via Azure Data Factory and T-SQL, and a Power BI dashboard.',
+                    techs: ['Python', 'Azure Data Factory', 'Azure SQL', 'Power BI'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/anp-fuel-prices-elt-azure',
                 },
                 {
                     id: 2,
-                    title: 'Homelab Monitor & Controller',
-                    category: 'DevOps & Systems',
-                    category2: 'Hobby',
-                    image: '/project2.png',
-                    description: 'Full-stack application for monitoring home server resources and Docker containers.',
-                    techs: ['Java', 'Spring Boot', 'React', 'Docker'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink:  'https://demo-link.com'
+                    title: 'SQL Server CDC to Data Warehouse',
+                    category: 'Data Engineering',
+                    category2: 'Data Warehouse',
+                    image: '/project-cdc-dw.svg',
+                    description: 'A pipeline that captures changes straight from SQL Server via native Change Data Capture (LSN-based tracking) and incrementally loads a dimensional warehouse with SCD2, no external orchestrators. Dockerized, with automated pytest coverage.',
+                    techs: ['SQL Server', 'T-SQL', 'Python', 'Docker'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/sqlserver-cdc-to-dw',
                 },
                 {
                     id: 3,
@@ -280,13 +280,13 @@ export const dictionaries = {
                 },
                 {
                     id: 4,
-                    title: 'Corporate ERP Integration',
-                    category: 'Backend Architecture',
-                    image: '/Project4.png',
-                    description: 'Robust RESTful API to integrate legacy systems with new e-commerce platforms.',
-                    techs: ['Java', 'Spring', 'PostgreSQL', 'Swagger'],
-                    repoLink: 'https://github.com/seu-usuario/repo',
-                    demoLink: 'https://demo-link.com'
+                    title: 'CNPJ Data Lakehouse',
+                    category: 'Data Engineering',
+                    category2: 'Big Data',
+                    image: '/project-cnpj-lakehouse.svg',
+                    description: "A local layered lakehouse (bronze, silver, gold) for Brazil's public CNPJ registry data, orchestrated with Airflow, processed with distributed PySpark, and stored as Delta Lake on MinIO.",
+                    techs: ['PySpark', 'Airflow', 'Delta Lake', 'Docker'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/cnpj-lakehouse-spark-airflow',
                 }
             ]
         },
