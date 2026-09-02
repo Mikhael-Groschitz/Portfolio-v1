@@ -1,28 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="CNPJ data lakehouse illustration">
-  <rect width="800" height="450" fill="#129490"/>
-  <circle cx="400" cy="235" r="230" fill="#17ADA6"/>
-  <circle cx="105" cy="85" r="24" fill="#FFFFFF" opacity="0.3"/>
-  <circle cx="715" cy="90" r="18" fill="#FFFFFF" opacity="0.3"/>
-  <circle cx="740" cy="395" r="30" fill="#FFFFFF" opacity="0.22"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Terminal simulando a execução do lakehouse de dados de CNPJ">
+  <rect width="800" height="450" fill="#0b1210"/>
 
-  <path d="M255 165 C262 188 292 194 322 204" stroke="#00ffa3" stroke-width="8" fill="none" stroke-dasharray="2 16" stroke-linecap="round"/>
-  <path d="M520 138 C530 158 502 168 482 178" stroke="#00ffa3" stroke-width="8" fill="none" stroke-dasharray="2 16" stroke-linecap="round"/>
-
-  <path d="M250 55 L265 95 L305 110 L265 125 L250 165 L235 125 L195 110 L235 95 Z" fill="#FF7A45" stroke="#14181b" stroke-width="8" stroke-linejoin="round"/>
-
-  <path d="M460 90 Q520 78 580 90" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round"/>
-  <path d="M460 115 Q525 103 590 115" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round"/>
-  <path d="M460 140 Q515 128 570 140" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round"/>
-
-  <defs>
-    <clipPath id="lakeClip">
-      <rect x="300" y="170" width="220" height="230" rx="36"/>
-    </clipPath>
-  </defs>
-  <g clip-path="url(#lakeClip)">
-    <rect x="300" y="170" width="220" height="230" fill="#F2C14E"/>
-    <rect x="300" y="270" width="220" height="130" fill="#C7CCD1"/>
-    <rect x="300" y="335" width="220" height="65" fill="#C97B4A"/>
+  <g opacity="0.07" fill="none" stroke="#2DD4BF" stroke-width="10">
+    <circle cx="645" cy="145" r="145"/>
+    <circle cx="725" cy="335" r="105"/>
   </g>
-  <rect x="300" y="170" width="220" height="230" rx="36" fill="none" stroke="#14181b" stroke-width="10"/>
+
+  <text x="40" y="52" font-family="'JetBrains Mono','Courier New',monospace" font-size="16" fill="#5f6b66">~/cnpj-lakehouse-spark-airflow</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1c2622" stroke-width="1.5"/>
+
+  <text font-family="'JetBrains Mono','Courier New',monospace" font-size="22" fill="#e8f5ee">
+    <tspan x="40" y="118"><tspan fill="#2DD4BF">$</tspan> airflow dags trigger cnpj_bronze</tspan>
+    <tspan x="40" y="164" fill="#8a9a94">&gt; [bronze] WebDAV: 6 tabelas + Empresas</tspan>
+    <tspan x="40" y="210" fill="#8a9a94">&gt; [bronze] checksum OK (idempotente)</tspan>
+    <tspan x="40" y="256"><tspan fill="#2DD4BF">$</tspan> spark-submit bronze_to_silver.py</tspan>
+    <tspan x="40" y="302" fill="#8a9a94">&gt; [silver] reconstrução de CNPJ</tspan>
+    <tspan x="40" y="348" fill="#2DD4BF">✓ Delta Lake (MinIO): partição gravada</tspan>
+  </text>
+
+  <rect x="552" y="334" width="14" height="24" fill="#2DD4BF"/>
 </svg>
