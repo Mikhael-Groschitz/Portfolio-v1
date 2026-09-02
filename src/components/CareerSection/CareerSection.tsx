@@ -28,7 +28,7 @@ const CareerSection = () => {
                             key={item.id}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
+                            viewport={{ once: true, margin: "0px 0px 200px 0px" }}
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className={`timeline-row ${isEven ? 'even' : ''}`}
                         >

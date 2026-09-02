@@ -10,9 +10,9 @@ const Footer = () => {
 
     return (
         <footer className="footer-shell w-full flex items-center">
-            <div className="container mx-auto px-6 pt-10 pb-20 md:pt-14 md:pb-24 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="container mx-auto px-6 pt-6 pb-6 flex flex-col items-center justify-center text-center gap-6">
 
-                <div className="footer-text text-center md:text-left">
+                <div className="footer-text">
                     <p>© {currentYear} Mikhael Groschitz. {t.footer.rights}</p>
                 </div>
 

@@ -40,12 +40,11 @@ const SkillsSection = () => {
     return (
         <div className="w-full h-full flex flex-col justify-center">
 
-            <div className="container mx-auto text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-highlight-white mb-4">
-                    {t.skills.title}
+            <div className="text-center mb-12 px-4">
+                <h2 className="skills-heading">
+                    <span className="skills-prompt">&gt;</span> {t.skills.title}
+                    <span className="pill-cursor is-visible">_</span>
                 </h2>
-
-                <div className="w-12 h-1 bg-white mx-auto rounded-full"></div>
             </div>
 
             <div className="w-full group/track overflow-hidden">
@@ -57,8 +56,8 @@ const SkillsSection = () => {
                     gap={80}
                     pauseOnHover={true}
                     fadeOut={true}
-                    fadeOutColor="#474343"
-                    className="py-24 [&_ul]:list-none [&_li]:list-none"
+                    fadeOutColor="#181818"
+                    className="py-8 [&_ul]:list-none [&_li]:list-none"
                 />
             </div>
         </div>

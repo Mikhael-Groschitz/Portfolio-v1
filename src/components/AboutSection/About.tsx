@@ -22,7 +22,7 @@ const About = () => {
 
                         <div className="about-col-photo">
                             <div className="about-photo-frame">
-                                <div className="relative w-[240px] h-[280px] bg-[#fdfdfd]">
+                                <div className="relative w-full h-[280px] bg-[#fdfdfd]">
                                     <Image
                                         src="/mikhael-profile.jpg"
                                         alt="Mikhael"
@@ -38,7 +38,7 @@ const About = () => {
                         </div>
 
                         <div className="about-col-text">
-                            <h2 className="text-2xl font-bold mb-5 border-b-2 border-[#f0d0d9]">
+                            <h2 className="text-lg md:text-2xl font-bold mb-5 border-b-2 border-[#f0d0d9]">
                                 system.out.print("{t.about.title}");
                             </h2>
 

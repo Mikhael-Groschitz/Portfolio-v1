@@ -20,15 +20,15 @@ export const dictionaries = {
         // --- SEÇÃO ABOUT ---
         about: {
             title: "Sobre Mim",
-            desc1_start: "Sou um profissional movido pelo desafio de transformar ambientes complexos de dados em inteligência de negócios.",
-            desc1_highlight: 'Especialista em otimização de performance e construção de pipelines robustos',
-            desc1_end: ".",
+            desc1_start: "Comecei resolvendo problemas de outras pessoas no suporte técnico, mas o que sempre me prendia de verdade era ",
+            desc1_highlight: 'ir atrás da causa raiz escondida nos dados por trás de cada chamado',
+            desc1_end: ". Essa curiosidade foi o que me levou da análise para a engenharia de dados.",
 
-            desc2_start: "Atuo na intersecção ",
-            desc2_highlight: "entre a engenharia de software e a ciência de dados",
-            desc2_end: "para garantir que a informação chegue com qualidade, segurança e velocidade.",
+            desc2_start: "Hoje minha rotina é ",
+            desc2_highlight: "arquitetar e otimizar performance de bancos de dados relacionais para o setor financeiro",
+            desc2_end: ", orquestrando pipelines de ETL/ELT e automações que precisam funcionar direito todos os dias — não só na primeira vez.",
 
-            desc3_start: "Especializando-me em ",
+            desc3_start: "Fora do expediente, sigo construindo pipelines e arquiteturas de dados do zero por conta própria — é assim que aprendo de verdade. É para lá que estou direcionando minha especialização: ",
             desc3_highlight: "Arquitetura e Ciência de dados",
             desc3_end: ".",
 
@@ -105,18 +105,6 @@ export const dictionaries = {
                 },
                 {
                     id: 3,
-                    title: 'MTG TokenForge',
-                    category: 'Mobile / Web App',
-                    category2: 'Fullstack',
-                    category3: 'Hobby',
-                    image: '/project3.png',
-                    description: 'Crie e administre seus tokens customizados. Focado em ajudar jogadores de MTG a ter um controle melhor sobre o "Estado da mesa" ',
-                    techs: ['React','Java', 'Spring boot', 'PostgreSQL'],
-                    repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
-                    demoLink: 'https://www.theforgeoftokens.com'
-                },
-                {
-                    id: 4,
                     title: 'Data Lakehouse de CNPJs',
                     category: 'Engenharia de Dados',
                     category2: 'Big Data',
@@ -124,6 +112,18 @@ export const dictionaries = {
                     description: 'Lakehouse local em camadas (bronze, silver, gold) para os dados públicos de CNPJ da Receita Federal, com orquestração via Airflow, processamento distribuído em PySpark e armazenamento em Delta Lake sobre MinIO.',
                     techs: ['PySpark', 'Airflow', 'Delta Lake', 'Docker'],
                     repoLink: 'https://github.com/Mikhael-Groschitz/cnpj-lakehouse-spark-airflow',
+                },
+                {
+                    id: 4,
+                    title: 'MTG TokenForge',
+                    category: 'Mobile / Web App',
+                    category2: 'Fullstack',
+                    category3: 'Hobby',
+                    image: '/project-token-forge.png',
+                    description: 'Crie e administre seus tokens customizados. Focado em ajudar jogadores de MTG a ter um controle melhor sobre o "Estado da mesa" ',
+                    techs: ['React','Java', 'Spring boot', 'PostgreSQL'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
+                    demoLink: 'https://www.theforgeoftokens.com'
                 }
             ]
         },
@@ -184,15 +184,15 @@ export const dictionaries = {
         // --- SEÇÃO ABOUT (EN) ---
         about: {
             title: "About Me",
-            desc1_start: "I am a professional driven by the challenge of transforming complex data environments into business intelligence.",
-            desc1_highlight: "Specialist in performance optimization and building robust pipelines",
-            desc1_end: ".",
+            desc1_start: "I started out fixing other people's problems in IT support, but what really hooked me was ",
+            desc1_highlight: "chasing the root cause hidden in the data behind every ticket",
+            desc1_end: ". That curiosity is what pulled me from analysis into data engineering.",
 
-            desc2_start: "I operate at the intersection ",
-            desc2_highlight: "of software engineering and data science",
-            desc2_end: " to ensure that information is delivered with quality, security, and speed.",
+            desc2_start: "These days my day-to-day is ",
+            desc2_highlight: "architecting and tuning relational database performance for the financial sector",
+            desc2_end: ", orchestrating ETL/ELT pipelines and automations that need to hold up every single day — not just work once.",
 
-            desc3_start: "Specializing in ",
+            desc3_start: "Outside of work, I keep building pipelines and data architectures from scratch on my own — that's how I actually learn. It's what's driving my specialization in ",
             desc3_highlight: "Data Architecture and Data Science",
             desc3_end: ".",
 
@@ -268,18 +268,6 @@ export const dictionaries = {
                 },
                 {
                     id: 3,
-                    title: 'MTG Token Forge',
-                    category: 'Mobile / Web App',
-                    category2: ' Full Stack',
-                    category3: 'Hobby',
-                    image: '/project3.png',
-                    description: 'Create and manage our own custom tokens. Focused on helping MTG players to have a better control of their "board state" ',
-                    techs: ['React Native', 'JS', 'Java', 'Spring boot', 'CSS'],
-                    repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
-                    demoLink: 'https://www.theforgeoftokens.com'
-                },
-                {
-                    id: 4,
                     title: 'CNPJ Data Lakehouse',
                     category: 'Data Engineering',
                     category2: 'Big Data',
@@ -287,6 +275,18 @@ export const dictionaries = {
                     description: "A local layered lakehouse (bronze, silver, gold) for Brazil's public CNPJ registry data, orchestrated with Airflow, processed with distributed PySpark, and stored as Delta Lake on MinIO.",
                     techs: ['PySpark', 'Airflow', 'Delta Lake', 'Docker'],
                     repoLink: 'https://github.com/Mikhael-Groschitz/cnpj-lakehouse-spark-airflow',
+                },
+                {
+                    id: 4,
+                    title: 'MTG Token Forge',
+                    category: 'Mobile / Web App',
+                    category2: ' Full Stack',
+                    category3: 'Hobby',
+                    image: '/project-token-forge.png',
+                    description: 'Create and manage our own custom tokens. Focused on helping MTG players to have a better control of their "board state" ',
+                    techs: ['React Native', 'JS', 'Java', 'Spring boot', 'CSS'],
+                    repoLink: 'https://github.com/Mikhael-Groschitz/MTG-Token-Counter-Web',
+                    demoLink: 'https://www.theforgeoftokens.com'
                 }
             ]
         },

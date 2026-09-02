@@ -40,35 +40,35 @@ export default function Home() {
 
                 <main>
                     {/* HERO */}
-                    <section id="home" className="h-screen w-full bg-black text-white">
+                    <section id="home" className="h-dvh w-full bg-black text-white">
                         <Hero />
                     </section>
 
                     {/* ABOUT */}
-                    <section id="about" className="min-h-[40vh] w-full bg-[#1c1c1c] text-black py-24 flex items-center">
+                    <section id="about" className="min-h-[40vh] w-full bg-[#1c1c1c] text-black py-6 flex items-center">
                         <About />
                     </section>
 
                     {/* SKILLS */}
-                    <section id="skills" className="min-h-[40vh] w-full bg-[#181818] text-white py-24 flex items-center">
+                    <section id="skills" className="min-h-[40vh] w-full bg-[#181818] text-white py-6 flex items-center">
                         <SkillsSection />
                     </section>
 
                     {/* Career */}
-                    <section id="career" className="min-h-[40vh] w-full bg-[#09090b] text-black py-24 flex items-center">
+                    <section id="career" className="min-h-[40vh] w-full bg-[#09090b] text-black py-6 flex items-center">
                         <CareerSection />
                     </section>
 
                     {/* PROJECTS */}
                     <section
                         id="projects"
-                        className="min-h-screen w-full bg-[#1c1c1c] text-black py-24 flex flex-col justify-center"
+                        className="w-full bg-[#1c1c1c] text-black py-6 flex flex-col justify-center"
                     >
                         <ProjectsSection />
                     </section>
 
                     {/* CONTACT */}
-                    <section id="contact" className="w-full bg-[#181818] text-white py-24 flex items-center">
+                    <section id="contact" className="w-full bg-[#181818] text-white py-6 flex items-center">
                         <ContactSection />
                     </section>
                 </main>

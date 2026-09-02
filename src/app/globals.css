@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 
 
@@ -20,6 +17,14 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+#about,
+#skills,
+#career,
+#projects,
+#contact {
+    scroll-margin-top: 90px;
 }
 
 
@@ -160,6 +165,20 @@ body {
 
 
 /* --- SEÇÃO DE SKILLS --- */
+
+.skills-heading {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--nav-text-active);
+    font-family: var(--nav-font);
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+}
+
+.skills-prompt {
+    color: var(--nav-accent);
+}
 
 .skill-item {
     position: relative;
@@ -363,7 +382,8 @@ body {
     transform: rotate(-2deg);
     border: 1px solid rgba(255, 255, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 240px;
+    width: 240px;
+    overflow: hidden;
 }
 
 .about-photo-frame:hover {
@@ -398,7 +418,12 @@ body {
 @media (min-width: 768px) {
     .about-col-text {
         font-size: 15px;
-        width: 58.3%;
+        width: auto;
+        flex: 1;
+    }
+
+    .about-col-photo {
+        flex-shrink: 0;
     }
 }
 
@@ -1329,17 +1354,9 @@ body {
     background-color: #09090b;
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
-    padding: 6rem 1rem 4rem 1rem;
+    padding: 2rem 1rem;
     color: #ffffff;
     overflow: hidden;
-    scroll-margin-top: 90px;
-}
-
-@media (min-width: 768px) {
-    .timeline-section {
-        padding: 8rem 1rem 5rem 1rem;
-    }
 }
 
 .career-heading {
