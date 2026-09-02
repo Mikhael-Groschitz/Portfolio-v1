@@ -22,21 +22,22 @@ const allerta = Allerta_Stencil({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://mgroschitz.dev"),
     title: {
-        default: "Mikhael Groschitz | Software Architecture & Data Science",
+        default: "Mikhael Groschitz | Engenheiro de Dados",
         template: "%s | Mikhael Groschitz"
     },
-    description: "Junior Data Analyst & Software Architecture student at PUCPR. Specialist in Data Science, Cybersecurity, and Homelab systems.",
-    keywords: ["Data Analyst", "Software Architecture", "PUCPR", "Cybersecurity", "Next.js", "Porto Alegre", "Mikhael Groschitz"],
+    description: "Engenheiro de dados brasileiro especializado em arquitetura de pipelines, otimização de performance em bancos de dados e ciência de dados.",
+    keywords: ["Engenheiro de Dados", "Data Engineer", "Data Engineering", "Arquitetura de Dados", "Ciência de Dados", "PUCPR", "Cybersecurity", "Next.js", "Porto Alegre", "Mikhael Groschitz"],
     authors: [{ name: "Mikhael Groschitz" }],
     creator: "Mikhael Groschitz",
 
     openGraph: {
         type: "website",
         locale: "pt_BR",
-        url: "https://mgroschitz.vercel.app",
-        title: "Mikhael Groschitz | Portfolio",
-        description: "Explorando a interseção entre análise de dados e arquitetura de sistemas.",
+        url: "https://mgroschitz.dev",
+        title: "Mikhael Groschitz | Engenheiro de Dados",
+        description: "Engenheiro de dados brasileiro explorando a interseção entre arquitetura de sistemas e ciência de dados.",
         siteName: "Mikhael Groschitz Portfolio",
         images: [
             {
