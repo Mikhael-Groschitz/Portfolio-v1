@@ -56,7 +56,7 @@ export default function Konami() {
             >
 
                 <img
-                    src="/EasterEgg.png"
+                    src="/v1/EasterEgg.png"
                     alt="What is a man?"
                     className="konami-image"
                 />

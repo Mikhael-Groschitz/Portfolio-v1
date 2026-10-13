@@ -24,7 +24,7 @@ const About = () => {
                             <div className="about-photo-frame">
                                 <div className="relative w-full h-[280px] bg-[#fdfdfd]">
                                     <Image
-                                        src="/mikhael-profile.jpg"
+                                        src="/v1/mikhael-profile.jpg"
                                         alt="Mikhael"
                                         fill
                                         style={{ objectFit: 'cover' }}
