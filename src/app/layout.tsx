@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "pt_BR",
-        url: "https://mgroschitz.dev",
+        url: "https://mgroschitz.dev/v1",
         title: "Mikhael Groschitz | Engenheiro de Dados",
         description: "Engenheiro de dados brasileiro explorando a interseção entre arquitetura de sistemas e ciência de dados.",
         siteName: "Mikhael Groschitz Portfolio",
         images: [
             {
-                url: "/og-image.png",
+                url: "/v1/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Mikhael Groschitz | Portfolio Preview",
@@ -49,7 +49,11 @@ export const metadata: Metadata = {
         ],
     },
     icons: {
-        icon: '/icon.png',
+        icon: '/v1/icon.png',
+    },
+    robots: {
+        index: false,
+        follow: false,
     },
 };
 
