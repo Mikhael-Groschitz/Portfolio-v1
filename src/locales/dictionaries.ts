@@ -149,6 +149,10 @@ export const dictionaries = {
             button: "CLIQUE PARA VOLTAR"
         },
 
+        tardis: {
+            label: "Voltar para a v2"
+        },
+
         // --- MENSAGENS DO CONSOLE ---
         console: {
             fanfare: "🎵 Victory Fanfare:",
@@ -310,6 +314,10 @@ export const dictionaries = {
             title: "SORRY! NOTHING THIS TIME!",
             text: "(Nice try though!)",
             button: "CLICK TO RETURN"
+        },
+
+        tardis: {
+            label: "Back to v2"
         },
 
         // --- MENSAGEM DO CONSOLE (EN)

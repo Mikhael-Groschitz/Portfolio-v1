@@ -1571,3 +1571,382 @@ body {
     box-shadow: 0 0 12px rgba(0, 255, 163, 0.3);
     transform: translateY(-2px);
 }
+
+.tardis-link {
+    --tw: 20px;
+    --tb: calc(var(--tw) * 1.7333);
+    --rw: calc(var(--tw) * 0.82);
+    --tt: calc(var(--tw) * 0.13);
+    --tl: calc(var(--tw) * 0.2);
+    --lw: calc(var(--tw) * 0.18);
+    --th: calc(var(--tt) + var(--tl));
+    --tardis-spin: 14s;
+    position: fixed;
+    right: calc(16px + env(safe-area-inset-right));
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 50;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 16px 7px 10px;
+    border-radius: 9999px;
+    background-color: rgba(12, 16, 14, 0.85);
+    border: 1px solid var(--nav-border);
+    box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.6);
+    color: var(--nav-text-active);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tardis-link:focus-visible {
+    outline: 2px solid var(--nav-accent);
+    outline-offset: 4px;
+}
+
+.tardis-float {
+    position: relative;
+    display: block;
+    width: calc(var(--tw) * 1.45);
+    height: calc(var(--th) + var(--tb));
+    animation: tardis-hover 3.6s ease-in-out infinite;
+}
+
+.tardis-scene {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: var(--tw);
+    height: 100%;
+    margin-left: calc(var(--tw) / -2);
+    perspective: calc(var(--tw) * 12);
+    transition: transform 0.3s ease;
+}
+
+.tardis-model {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    transform: rotateX(-14deg) rotateY(-32deg);
+}
+
+.tardis-face,
+.tardis-roof {
+    position: absolute;
+    display: block;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.tardis-face {
+    --half: calc(var(--tw) / 2);
+    top: var(--th);
+    left: 0;
+    width: var(--tw);
+    height: var(--tb);
+}
+
+.tardis-roof {
+    --half: calc(var(--rw) / 2);
+    top: calc(var(--th) - var(--tt));
+    left: calc((var(--tw) - var(--rw)) / 2);
+    width: var(--rw);
+    height: var(--tt);
+    background-color: #1a447f;
+}
+
+.tardis-face svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tardis-face::after,
+.tardis-roof::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: var(--shade);
+    pointer-events: none;
+}
+
+.tardis-face.is-front,
+.tardis-roof.is-front {
+    --shade: 0.18;
+    transform: translateZ(var(--half));
+}
+
+.tardis-face.is-right,
+.tardis-roof.is-right {
+    --shade: 0.08;
+    transform: rotateY(90deg) translateZ(var(--half));
+}
+
+.tardis-face.is-back,
+.tardis-roof.is-back {
+    --shade: 0.42;
+    transform: rotateY(180deg) translateZ(var(--half));
+}
+
+.tardis-face.is-left,
+.tardis-roof.is-left {
+    --shade: 0.42;
+    transform: rotateY(-90deg) translateZ(var(--half));
+}
+
+.tardis-cap,
+.tardis-roof-cap {
+    position: absolute;
+    display: block;
+    transform: rotateX(90deg);
+}
+
+.tardis-cap {
+    top: calc(var(--th) - var(--tw) / 2);
+    left: 0;
+    width: var(--tw);
+    height: var(--tw);
+    background-color: #122f5a;
+}
+
+.tardis-roof-cap {
+    top: calc(var(--th) - var(--tt) - var(--rw) / 2);
+    left: calc((var(--tw) - var(--rw)) / 2);
+    width: var(--rw);
+    height: var(--rw);
+    background-color: #1b4176;
+}
+
+.tardis-lamp {
+    position: absolute;
+    display: block;
+    top: calc(var(--th) - var(--tt) - var(--tl));
+    left: calc((var(--tw) - var(--lw)) / 2);
+    width: var(--lw);
+    height: var(--tl);
+    background: linear-gradient(to bottom, #10305c 0 20%, #eef8ff 20% 85%, #10305c 85% 100%);
+}
+
+.tardis-lamp.is-cross {
+    transform: rotateY(90deg);
+}
+
+.tardis-pane {
+    fill: #d9ebff;
+    transition: fill 0.3s ease;
+}
+
+.tardis-glow {
+    position: absolute;
+    top: calc(var(--tl) * 0.55);
+    left: 50%;
+    width: calc(var(--tw) * 0.9);
+    height: calc(var(--tw) * 0.9);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(235, 247, 255, 0.95) 0%, rgba(140, 200, 255, 0.45) 30%, rgba(140, 200, 255, 0) 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: tardis-lamp 1.8s ease-in-out infinite;
+}
+
+.tardis-shadow,
+.tardis-label {
+    display: none;
+}
+
+.tardis-badge {
+    font-family: var(--nav-font);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.tardis-prompt {
+    color: var(--nav-accent);
+}
+
+@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+    .tardis-link {
+        --tw: 52px;
+        right: 40px;
+        bottom: 36px;
+        padding: 0;
+        gap: 0;
+        background: none;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .tardis-link:focus-visible {
+        outline-offset: 8px;
+        border-radius: 14px;
+    }
+
+    .tardis-float {
+        animation: tardis-bob 4.8s ease-in-out infinite;
+    }
+
+    .tardis-model {
+        animation: tardis-spin var(--tardis-spin) linear infinite;
+    }
+
+    .tardis-face::after,
+    .tardis-roof::after {
+        animation: tardis-shade var(--tardis-spin) linear infinite;
+    }
+
+    .tardis-face.is-right::after,
+    .tardis-roof.is-right::after {
+        animation-delay: calc(var(--tardis-spin) * -0.25);
+    }
+
+    .tardis-face.is-back::after,
+    .tardis-roof.is-back::after {
+        animation-delay: calc(var(--tardis-spin) * -0.5);
+    }
+
+    .tardis-face.is-left::after,
+    .tardis-roof.is-left::after {
+        animation-delay: calc(var(--tardis-spin) * -0.75);
+    }
+
+    .tardis-shadow {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+        width: calc(var(--tw) * 1.5);
+        height: 12px;
+        margin-left: calc(var(--tw) * -0.75);
+        border-radius: 50%;
+        background: radial-gradient(ellipse at center, rgba(0, 255, 163, 0.3) 0%, rgba(0, 255, 163, 0) 70%);
+        animation: tardis-shadow 4.8s ease-in-out infinite;
+    }
+
+    .tardis-label {
+        display: block;
+        position: absolute;
+        right: calc(100% + 14px);
+        top: 50%;
+        padding: 8px 14px;
+        border-radius: 9999px;
+        background-color: var(--nav-shell-bg);
+        border: 1px solid var(--nav-border);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        font-family: var(--nav-font);
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: var(--nav-text-active);
+        opacity: 0;
+        transform: translate(8px, -50%);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        pointer-events: none;
+    }
+
+    .tardis-badge {
+        display: none;
+    }
+
+    .tardis-link:hover .tardis-label,
+    .tardis-link:focus-visible .tardis-label {
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+
+    .tardis-link:hover .tardis-scene,
+    .tardis-link:focus-visible .tardis-scene {
+        transform: translateY(-4px) scale(1.08);
+    }
+
+    .tardis-link:hover .tardis-pane,
+    .tardis-link:focus-visible .tardis-pane {
+        fill: #fff4c9;
+    }
+}
+
+.tardis-link.is-leaving {
+    pointer-events: none;
+}
+
+.tardis-link.is-leaving .tardis-scene {
+    animation: tardis-dematerialize 1.4s ease-in-out forwards;
+}
+
+.tardis-link.is-leaving .tardis-glow {
+    animation: tardis-flash 1.4s ease-in-out forwards;
+}
+
+.tardis-link.is-leaving .tardis-label,
+.tardis-link.is-leaving .tardis-badge,
+.tardis-link.is-leaving .tardis-shadow {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes tardis-spin {
+    from { transform: rotateX(-14deg) rotateY(0deg); }
+    to { transform: rotateX(-14deg) rotateY(360deg); }
+}
+
+@keyframes tardis-shade {
+    0% { opacity: 0.08; }
+    12.5% { opacity: 0.06; }
+    25% { opacity: 0.18; }
+    37.5% { opacity: 0.37; }
+    50% { opacity: 0.52; }
+    62.5% { opacity: 0.54; }
+    75% { opacity: 0.43; }
+    87.5% { opacity: 0.24; }
+    100% { opacity: 0.08; }
+}
+
+@keyframes tardis-bob {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+@keyframes tardis-hover {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-2px) rotate(2deg); }
+}
+
+@keyframes tardis-shadow {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(0.75); opacity: 0.5; }
+}
+
+@keyframes tardis-lamp {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.85); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@keyframes tardis-dematerialize {
+    0% { opacity: 1; }
+    14% { opacity: 0.3; }
+    28% { opacity: 0.95; }
+    42% { opacity: 0.2; }
+    56% { opacity: 0.75; }
+    70% { opacity: 0.1; }
+    84% { opacity: 0.45; }
+    100% { opacity: 0; }
+}
+
+@keyframes tardis-flash {
+    0% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.8); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(2.4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tardis-float,
+    .tardis-model,
+    .tardis-glow,
+    .tardis-shadow,
+    .tardis-face::after,
+    .tardis-roof::after {
+        animation: none;
+    }
+}

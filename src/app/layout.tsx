@@ -3,6 +3,7 @@ import { Inter, Fira_Code, Press_Start_2P, Allerta_Stencil} from "next/font/goog
 import "./globals.css";
 import SiteProtection from "@/components/SiteProtection/SiteProtection";
 import Konami from "@/components/EasterEgg/Konami";
+import Tardis from "@/components/Tardis/Tardis";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -69,6 +70,7 @@ export default function RootLayout({
             <SiteProtection />
             <Konami />
             {children}
+            <Tardis />
         </LanguageProvider>
         <Analytics />
         <SpeedInsights />
