@@ -1,6 +1,10 @@
-# 🚀 Mikhael Groschitz | Portfolio
+# 🗃️ Mikhael Groschitz | Portfolio v1 (legado)
 
-Bem-vindo ao repositório do meu portfólio profissional. Este projeto foi desenvolvido para servir como uma vitrine técnica da minha transição de carreira e especialização em **Arquitetura de Software, Data Science e Cybersecurity** pela **PUCPR**.
+> [!NOTE]
+> **Esta é a primeira versão do meu portfólio, mantida como legado.**
+> A versão atual está em **[mgroschitz.dev](https://mgroschitz.dev)**. Esta v1 continua no ar, como registro, em **[mgroschitz.dev/v1](https://mgroschitz.dev/v1)**.
+
+Este projeto foi desenvolvido para servir como uma vitrine técnica da minha transição de carreira e especialização em **Arquitetura de Software, Data Science e Cybersecurity** pela **PUCPR**.
 
 ---
 
@@ -27,32 +31,41 @@ O projeto utiliza tecnologias robustas para garantir performance e escalabilidad
 * **🎮 Easter Eggs**:
     * **Konami Code**: Homenagem à cultura geek que desbloqueia uma surpresa interativa.
     * **Console Fanfare**: Mensagens personalizadas no DevTools para desenvolvedores curiosos.
+* **🚪 Volta para a v2**: Uma TARDIS 3D flutua no canto inferior direito e leva de volta à versão atual do portfólio. No celular, ela aparece em uma versão 2.5D mais leve.
 
 ---
 
 ## 🏗️ Arquitetura e Engenharia
 
 * **Componentização**: Código modular seguindo padrões modernos de desenvolvimento.
-* **SEO Avançado**: Configuração de `robots.txt`, `sitemap.ts` dinâmico e Meta Tags (Open Graph) para visibilidade internacional.
+* **SEO**: Meta Tags (Open Graph) configuradas. Por ser legado, a v1 é marcada como `noindex, nofollow`, para que apenas a versão atual apareça nas buscas.
 * **Otimização Mobile**: Interface totalmente adaptada para dispositivos de baixa resolução, como o iPhone SE.
+* **Publicação em `/v1`**: O app roda com `basePath: "/v1"` na Vercel, e o domínio da versão atual repassa (rewrite) o caminho `/v1` para este projeto.
 
 ---
-
 
 ## 🚀 Como Executar o Projeto
 
 1. **Clone o repositório**:
+
    ```bash
-    git clone https://github.com/Mikhael-Groschitz/Portifolio.git
-   
+   git clone https://github.com/Mikhael-Groschitz/Portfolio-v1.git
+   ```
+
 2. **Instale as dependências**:
 
-    ```bash
-    npm install
+   ```bash
+   npm install
+   ```
+
 3. **Inicie o servidor de desenvolvimento**:
-    ```bash
-    npm run dev
-   
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse** [http://localhost:3000/v1](http://localhost:3000/v1). Por causa do `basePath`, a raiz (`/`) responde 404.
+
 ## ✉️ Contato
 **LinkedIn**: https://www.linkedin.com/in/mikhael-groschitz/
 
